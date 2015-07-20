@@ -1,0 +1,65 @@
+/*
+Cores:
+#39277F - bg header
+#6F6B7F - link
+#A189FF - link hover
+#B2ABCC - link active
+#DED6FF - texto cor escura
+*/
+
+
+body {
+	font-family: "Roboto", Arial, Helvetica, Sans-serif;
+	color: #222;
+}
+
+header {
+	background: #39277F;
+	width: 100%;
+	color: #fff;
+	padding: 15px 0;
+	margin-bottom: 20px;
+}
+
+.container, main {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	width: 100%;
+}
+a, a:visited {
+	color: #A189FF;
+}
+
+a:hover {
+	color: #6F6B7F;
+}
+
+a:active {
+	color: #B2ABCC;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+
+
+
+
