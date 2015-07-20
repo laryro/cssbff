@@ -1,0 +1,79 @@
+<!doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Escopo</title>
+	<style type="text/css" media="screen">
+
+		.lista-legal {
+			color: red;
+		}
+
+		#banner > .lista-legal {
+			color: blue;
+		}
+
+		.lista-legal li:first-child {
+			color: yellow;
+		}
+
+		.lista-legal li:last-child {
+			color: green;
+		}
+
+		.irmaos li {
+			color: red;
+		}
+
+		.irmaos li + li {
+			border-top: 1px solid red;
+			color: cyan;
+		}
+
+
+	</style>
+</head>
+<body>
+
+
+<ul class="lista-legal">
+	<li>Essa lista é vermelha</li>
+	<li>Essa lista é vermelha</li>
+	<li>Essa lista é vermelha</li>
+	<li>Essa lista é vermelha</li>
+</ul>
+
+<div id="banner">
+	<ul class="lista-legal">
+		<li>Essa lista é azul</li>
+		<li>Essa lista é azul</li>
+		<li>Essa lista é azul</li>
+		<li>Essa lista é azul</li>
+	</ul>
+</div>
+
+<div id="banner">
+	<div class="vish">
+		<ul class="lista-legal">
+			<li>Essa lista NÃO é azul</li>
+			<li>Essa lista NÃO é azul</li>
+			<li>Essa lista NÃO é azul</li>
+			<li>Essa lista NÃO é azul</li>
+		</ul>
+	</div>
+</div>
+
+
+<ul class="irmaos">
+	<li>não tenho nenhum irmão atrás de mim :(</li>
+	<li>tenho um irmão \o/</li>
+	<li>tenho um irmão \o/</li>
+	<li>tenho um irmão \o/</li>
+	<li>tenho um irmão \o/</li>
+	<li>tenho um irmão \o/</li>
+</ul>
+
+
+
+</body>
+</html>
